@@ -25,14 +25,14 @@ export default function Projects() {
   const rest = filtered.filter((p) => !p.featured || p !== featured);
 
   return (
-    <section id="projects" className="py-24 bg-white">
+    <section id="projects" className="py-16 sm:py-24 bg-slate-100">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-12">
           <div>
             <p className="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-3">Projects</p>
-            <h2 className="text-4xl font-semibold tracking-tight text-gray-900">Production work</h2>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">Production work</h2>
           </div>
 
           {/* Filters */}
@@ -115,7 +115,7 @@ export default function Projects() {
             <Link
               key={project.id}
               to={`/project/${project.id}`}
-              className="group border border-gray-100 rounded-2xl overflow-hidden hover:border-gray-300 hover:shadow-md transition-all duration-200"
+              className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:border-blue-200 hover:shadow-md transition-all duration-200"
             >
               {/* Thumb */}
               <div className={`bg-gradient-to-br ${colorMap[project.id]} h-36 flex items-end p-5`}>
@@ -126,7 +126,7 @@ export default function Projects() {
                 <h3 className="text-base font-semibold text-gray-900 mb-1.5 group-hover:text-blue-600 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4 line-clamp-2">
+                <p className="text-sm text-gray-600 leading-relaxed mb-4 line-clamp-2">
                   {project.shortDesc}
                 </p>
 
@@ -140,7 +140,7 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex items-center justify-between pt-3 border-t border-gray-50">
+                <div className="flex items-center justify-between pt-3 border-t border-gray-100">
                   <span className="text-xs font-medium text-blue-600 group-hover:underline">
                     View Case Study →
                   </span>
