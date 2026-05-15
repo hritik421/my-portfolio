@@ -1,3 +1,5 @@
+import profilePhoto from "../assets/HritikProfile.png";
+
 export const personal = {
   name: "Hritik Gupta",
   initials: "HG",
@@ -7,13 +9,13 @@ export const personal = {
   heroSub:
     "Full Stack Engineer specialising in distributed systems, cloud-native backends, and high-performance React frontends. 4.5+ years shipping production-grade software at Dunnhumby and Microsoft (via MAQ Software).",
   available: true,
-  availabilityNote: "1 Month Notice Period",
-  location: "Delhi, India",
+  availabilityNote: "2 Month Notice Period",
+  location: "Gurugram, India",
   email: "hritikgupta211@gmail.com",
   linkedin: "https://www.linkedin.com/in/hritik-gupta-50a895194/",
   github: "https://github.com/hritik421",
   gfg: "https://auth.geeksforgeeks.org/user/hritikgupta042/practice",
-  photo: "/assets/HritikProfile.png",
+  photo: profilePhoto,
 
   stats: [
     { value: "4.5+", label: "Years Experience" },
