@@ -12,20 +12,20 @@ const traits = [
 
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gray-50">
+    <section id="about" className="py-16 sm:py-24 bg-slate-100">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Section header */}
-        <div className="mb-16">
+        <div className="mb-10 sm:mb-16">
           <p className="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-3">About Me</p>
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900">Who I am</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">Who I am</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Left — Bio + traits */}
           <div>
-            <div className="space-y-4 text-gray-600 leading-relaxed">
+            <div className="space-y-4 text-gray-700 leading-relaxed">
               {personal.about.split("\n\n").map((para, i) => (
                 <p key={i} className={i === 0 ? "text-lg" : "text-base"}>
                   {para}
@@ -38,7 +38,7 @@ export default function About() {
               {traits.map((t) => (
                 <span
                   key={t.label}
-                  className="inline-flex items-center gap-1.5 text-sm bg-white border border-gray-200 text-gray-700 px-3 py-1.5 rounded-full"
+                  className="inline-flex items-center gap-1.5 text-sm bg-white border border-gray-200 text-gray-700 px-3 py-1.5 rounded-full hover:border-blue-200 hover:bg-blue-50/50 hover:text-blue-700 transition-colors duration-150 cursor-default"
                 >
                   <span>{t.icon}</span>
                   {t.label}
@@ -77,7 +77,7 @@ export default function About() {
 
           {/* Right — Experience timeline */}
           <div>
-            <h3 className="text-sm font-semibold text-gray-400 uppercase tracking-widest mb-6">
+            <h3 className="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-6">
               Career Timeline
             </h3>
 
@@ -110,10 +110,10 @@ export default function About() {
                           </span>
                         )}
                       </div>
-                      <div className="text-xs text-gray-400 mt-1">{exp.period} · {exp.duration}</div>
+                      <div className="text-xs text-gray-500 mt-1">{exp.period} · {exp.duration}</div>
                       <div className="flex flex-wrap gap-1 mt-2">
                         {exp.stack.slice(0, 4).map((s) => (
-                          <span key={s} className="text-xs bg-gray-50 text-gray-600 border border-gray-100 px-2 py-0.5 rounded">
+                          <span key={s} className="text-xs bg-white text-gray-600 border border-gray-200 px-2 py-0.5 rounded">
                             {s}
                           </span>
                         ))}
@@ -131,7 +131,7 @@ export default function About() {
                     <div className="bg-white border border-gray-100 rounded-xl p-4 flex-1 shadow-sm">
                       <div className="text-sm font-semibold text-gray-900">{edu.degree}</div>
                       <div className="text-sm text-amber-600 font-medium">{edu.institution}</div>
-                      <div className="text-xs text-gray-400 mt-1">{edu.period} · {edu.location}</div>
+                      <div className="text-xs text-gray-500 mt-1">{edu.period} · {edu.location}</div>
                     </div>
                   </div>
                 ))}
