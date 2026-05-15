@@ -35,12 +35,22 @@ export default function Navbar() {
     }
   };
 
+  const handleHireClick = (e) => {
+    e.preventDefault();
+    setMenuOpen(false);
+    if (location.pathname !== "/") {
+      window.location.href = "/#contact";
+      return;
+    }
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 backdrop-blur-md border-b border-gray-100 shadow-sm"
-          : "bg-transparent"
+          ? "bg-white/98 backdrop-blur-md border-b border-gray-200 shadow-sm"
+          : "bg-white/80 backdrop-blur-sm border-b border-gray-100/80"
       }`}
     >
       <nav className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -59,7 +69,7 @@ export default function Navbar() {
               <a
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 font-medium"
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200 font-medium"
               >
                 {link.label}
               </a>
@@ -70,8 +80,9 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href={`mailto:${personal.email}`}
-            className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+            href="/#contact"
+            onClick={handleHireClick}
+            className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 active:scale-95 transition-all duration-200"
           >
             Hire me
           </a>
@@ -93,20 +104,21 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 flex flex-col gap-4">
+        <div className="md:hidden bg-white/98 backdrop-blur-md border-t border-gray-100 px-6 py-5 flex flex-col gap-1 shadow-lg">
           {navLinks.map((link) => (
             <a
               key={link.label}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="text-sm text-gray-600 hover:text-gray-900 font-medium py-1"
+              className="text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 font-medium py-2.5 px-3 rounded-lg transition-colors duration-150"
             >
               {link.label}
             </a>
           ))}
           <a
-            href={`mailto:${personal.email}`}
-            className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-lg text-center"
+            href="/#contact"
+            onClick={handleHireClick}
+            className="text-sm font-medium bg-blue-600 text-white px-4 py-2.5 rounded-lg text-center mt-2 hover:bg-blue-700 transition-colors"
           >
             Hire me
           </a>
