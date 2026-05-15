@@ -29,13 +29,13 @@ const labelClass = {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-gray-50">
+    <section id="skills" className="py-16 sm:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-10 sm:mb-16">
           <p className="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-3">Skills</p>
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900">Tech I work with</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">Tech I work with</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -53,7 +53,7 @@ export default function Skills() {
                   <div key={skill.name}>
                     <div className="flex justify-between items-baseline mb-1.5">
                       <span className="text-sm text-gray-700 font-medium">{skill.name}</span>
-                      <span className="text-xs text-gray-400">{skill.years}y exp</span>
+                      <span className="text-xs text-gray-500">{skill.years}y exp</span>
                     </div>
                     <div className="h-1.5 bg-white/70 rounded-full overflow-hidden">
                       <div
