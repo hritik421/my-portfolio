@@ -17,20 +17,20 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 bg-white">
+    <section id="contact" className="py-16 sm:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-10 sm:mb-16">
           <p className="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-3">Contact</p>
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900">Let's build something great.</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">Let's build something great.</h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
 
           {/* Left — Info */}
           <div>
-            <p className="text-lg text-gray-500 leading-relaxed mb-8">
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-8">
               Open to full-time roles, contract work, and interesting collaborations. Whether you have a position to discuss or just want to connect — I respond within 24 hours.
             </p>
 
@@ -70,7 +70,7 @@ export default function Contact() {
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-gray-50 border border-gray-100 flex items-center justify-center text-gray-500 flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl bg-gray-100 border border-gray-200 flex items-center justify-center text-gray-600 flex-shrink-0">
                     {item.icon}
                   </div>
                   {item.href ? (
