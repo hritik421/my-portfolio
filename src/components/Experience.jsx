@@ -6,13 +6,13 @@ const badgeColor = ["bg-blue-50 text-blue-700", "bg-teal-50 text-teal-700", "bg-
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-24 bg-white">
+    <section id="experience" className="py-16 sm:py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="mb-16">
+        <div className="mb-10 sm:mb-16">
           <p className="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-3">Experience</p>
-          <h2 className="text-4xl font-semibold tracking-tight text-gray-900">Work history</h2>
+          <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">Work history</h2>
         </div>
 
         <div className="relative">
@@ -26,8 +26,8 @@ export default function Experience() {
                 {/* Date column */}
                 <div className="lg:text-right">
                   <div className="text-sm font-semibold text-gray-900">{exp.period}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{exp.duration}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{exp.location}</div>
+                  <div className="text-xs text-gray-500 mt-0.5">{exp.duration}</div>
+                  <div className="text-xs text-gray-500 mt-0.5">{exp.location}</div>
 
                   {/* Hidden on mobile — dot sits on the line */}
                   <div className="hidden lg:flex justify-end mt-4">
