@@ -25,14 +25,14 @@ export default function Blog() {
   const rest = blogs.filter((b) => !b.featured);
 
   return (
-    <section id="blog" className="py-24 bg-gray-50">
+    <section id="blog" className="py-16 sm:py-24 bg-slate-100">
       <div className="max-w-6xl mx-auto px-6">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-12">
           <div>
             <p className="text-xs font-semibold tracking-widest text-blue-600 uppercase mb-3">Blog</p>
-            <h2 className="text-4xl font-semibold tracking-tight text-gray-900">Thoughts & tutorials</h2>
+            <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">Thoughts & tutorials</h2>
           </div>
           <Link
             to="/blog"
@@ -47,7 +47,7 @@ export default function Blog() {
           {featured && (
             <Link
               to={`/blog/${featured.slug}`}
-              className="lg:col-span-2 group border border-gray-100 bg-white rounded-2xl overflow-hidden hover:border-gray-300 hover:shadow-md transition-all duration-200"
+              className="lg:col-span-2 group border border-gray-200 bg-white rounded-2xl overflow-hidden hover:border-blue-200 hover:shadow-md transition-all duration-200"
             >
               <div className={`bg-gradient-to-br ${thumbGradients[0]} h-48 flex items-end p-6`}>
                 <span className="inline-flex items-center gap-1.5 text-xs font-medium bg-white/20 text-white px-3 py-1 rounded-full">
@@ -55,7 +55,7 @@ export default function Blog() {
                 </span>
               </div>
               <div className="p-6">
-                <div className="flex items-center gap-3 mb-3 text-xs text-gray-400">
+                <div className="flex items-center gap-3 mb-3 text-xs text-gray-500">
                   <span>{featured.date}</span>
                   <span>·</span>
                   <span>{featured.readTime}</span>
@@ -63,7 +63,7 @@ export default function Blog() {
                 <h3 className="text-lg font-semibold text-gray-900 leading-snug mb-2 group-hover:text-blue-600 transition-colors">
                   {featured.title}
                 </h3>
-                <p className="text-sm text-gray-500 leading-relaxed mb-4">
+                <p className="text-sm text-gray-600 leading-relaxed mb-4">
                   {featured.excerpt}
                 </p>
                 <div className="flex flex-wrap gap-1.5">
@@ -83,7 +83,7 @@ export default function Blog() {
               <Link
                 key={blog.id}
                 to={`/blog/${blog.slug}`}
-                className="group border border-gray-100 bg-white rounded-2xl overflow-hidden hover:border-gray-300 hover:shadow-md transition-all duration-200 flex-1"
+                className="group border border-gray-200 bg-white rounded-2xl overflow-hidden hover:border-blue-200 hover:shadow-md transition-all duration-200 flex-1"
               >
                 <div className={`bg-gradient-to-br ${thumbGradients[i + 1]} h-24 flex items-end p-4`}>
                   <span className="text-white/70 text-xs font-medium">{blog.date}</span>
@@ -92,7 +92,7 @@ export default function Blog() {
                   <h3 className="text-sm font-semibold text-gray-900 leading-snug mb-1.5 group-hover:text-blue-600 transition-colors">
                     {blog.title}
                   </h3>
-                  <p className="text-xs text-gray-500 leading-relaxed mb-3 line-clamp-2">
+                  <p className="text-xs text-gray-600 leading-relaxed mb-3 line-clamp-2">
                     {blog.excerpt}
                   </p>
                   <div className="flex items-center justify-between">
@@ -103,7 +103,7 @@ export default function Blog() {
                         </span>
                       ))}
                     </div>
-                    <span className="text-xs text-gray-400">{blog.readTime}</span>
+                    <span className="text-xs text-gray-500">{blog.readTime}</span>
                   </div>
                 </div>
               </Link>
