@@ -17,7 +17,7 @@ export default function Experience() {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="hidden lg:block absolute left-48 top-0 bottom-0 w-px bg-gray-100" />
+          <div className="hidden lg:block absolute left-48 top-0 bottom-0 w-px bg-gray-300" />
 
           <div className="space-y-12">
             {experience.map((exp, i) => (
@@ -25,9 +25,11 @@ export default function Experience() {
 
                 {/* Date column */}
                 <div className="lg:text-right">
-                  <div className="text-sm font-semibold text-gray-900">{exp.period}</div>
-                  <div className="text-xs text-gray-500 mt-0.5">{exp.duration}</div>
-                  <div className="text-xs text-gray-500 mt-0.5">{exp.location}</div>
+                  <div className="lg:pr-6">
+                    <div className="text-sm font-semibold text-gray-900">{exp.period}</div>
+                    <div className="text-xs text-gray-500 mt-0.5">{exp.duration}</div>
+                    <div className="text-xs text-gray-500 mt-0.5">{exp.location}</div>
+                  </div>
 
                   {/* Hidden on mobile — dot sits on the line */}
                   <div className="hidden lg:flex justify-end mt-4">
@@ -82,8 +84,10 @@ export default function Experience() {
             {education.map((edu) => (
               <div key={edu.degree} className="grid grid-cols-1 lg:grid-cols-[192px_1fr] gap-6 lg:gap-10">
                 <div className="lg:text-right">
-                  <div className="text-sm font-semibold text-gray-900">{edu.period}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{edu.location}</div>
+                  <div className="lg:pr-6">
+                    <div className="text-sm font-semibold text-gray-900">{edu.period}</div>
+                    <div className="text-xs text-gray-400 mt-0.5">{edu.location}</div>
+                  </div>
                   <div className="hidden lg:flex justify-end mt-4">
                     <div className="w-3 h-3 rounded-full bg-amber-400 translate-x-[calc(2rem+0.5px)]" />
                   </div>
