@@ -1,0 +1,67 @@
+export const experience = [
+  {
+    id: 1,
+    role: "Platform Engineer",
+    company: "Dunnhumby",
+    type: "Full-time",
+    period: "Aug 2024 – Present",
+    duration: "1 yr 10 months",
+    location: "Remote",
+    highlights: [
+      "Designed and built a cloud-agnostic Data Export Service using .NET and PostgreSQL, enabling async generation of Excel/CSV files exceeding 100MB with streaming-based processing.",
+      "Architected a multi-cloud storage abstraction (Azure + GCP) using the Strategy pattern — seamless provider switching with zero application code changes.",
+      "Developed a fault-tolerant background job system with retry mechanisms, configurable failure recovery, and full diagnostics for reliable large-scale processing.",
+      "Built a Next.js BFF onboarding platform integrating 7+ microservices with improved end-to-end observability via New Relic distributed tracing.",
+      "Implemented micro-frontend architecture using Web Components and EventBus, enabling independent deployment of product modules without frontend coupling.",
+      "Established testing strategy using Jest, Pact, and Playwright across distributed services.",
+      "Deployed and scaled containerised applications on Kubernetes using Docker, Helm, and CI/CD pipelines with zero-downtime releases.",
+    ],
+    stack: [".NET", "Next.js", "React", "TypeScript", "PostgreSQL", "Redis", "Docker", "Kubernetes", "Azure", "GCP"],
+    projects: ["Export Service", "Onboarding Portal"],
+  },
+  {
+    id: 2,
+    role: "Software Engineer I",
+    company: "MAQ Software",
+    type: "Full-time",
+    period: "May 2023 – Aug 2024",
+    duration: "1 yr 4 months",
+    location: "Noida (Hybrid)",
+    highlights: [
+      "Owned complete feature lifecycle from requirements gathering through production deployment for enterprise Microsoft clients.",
+      "Converted Figma designs into high-performance React (TypeScript) and Tailwind CSS components with pixel-perfect accuracy.",
+      "Built extensive C# and xUnit test suites to simulate user interactions and enforce application reliability.",
+      "Transformed the UI/UX of the MaSH website — redesign earned direct commendation from the client.",
+      "Oversaw QA, code review, and UI/UX standards across the team to maintain project quality benchmarks.",
+    ],
+    stack: ["React", "TypeScript", "Tailwind CSS", "C#", "xUnit", ".NET"],
+    projects: ["Core Identity"],
+  },
+  {
+    id: 3,
+    role: "Associate Software Engineer",
+    company: "MAQ Software",
+    type: "Full-time",
+    period: "Apr 2022 – Apr 2023",
+    duration: "1 yr 1 month",
+    location: "Noida (Onsite)",
+    highlights: [
+      "Developed a centralised access management application for Microsoft, improving organisational accessibility and client efficiency.",
+      "Led end-to-end feature delivery including requirement gathering, sprint planning, and timely implementation.",
+      "Utilised Microsoft Azure for scalable, cloud-based solutions, optimising project performance and delivery.",
+      "Implemented comprehensive user stories with unit test coverage to ensure application functionality.",
+    ],
+    stack: [".NET Framework", "C#", "Blazor", "Azure DevOps", "Azure Cosmos DB", "Azure Active Directory"],
+    projects: ["Core Identity"],
+  },
+];
+
+export const education = [
+  {
+    degree: "B.Tech / B.E. — Computer Science & Engineering",
+    institution: "Lovely Professional University",
+    location: "Jalandhar",
+    period: "2019 – 2023",
+    type: "Full Time",
+  },
+];
