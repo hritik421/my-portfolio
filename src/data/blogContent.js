@@ -203,7 +203,6 @@ export const blogDetails = {
       },
     ],
     closing: [
-      "I'm currently going through an 8-week system design roadmap, designing one problem per week on paper before touching a keyboard.",
       "Next up: Pastebin, Rate Limiter, and Twitter Feed Design.",
     ],
   },
