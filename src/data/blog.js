@@ -23,14 +23,14 @@ export const blogs = [
   },
   {
     id: "bff-nextjs-microservices",
-    title: "Why I Chose BFF Architecture for a Next.js + Microservices Stack",
+    title: "Why I Chose BFF Architecture for a .NET + Microservices Stack",
     excerpt:
-      "Direct microservice calls from the browser caused waterfall latency, CORS headaches, and N+1 problems. Here's how a BFF layer with Next.js API routes fixed all three.",
+      "Direct microservice calls from the browser caused waterfall latency, CORS headaches, and N+1 problems. Here's how a BFF layer with .NET fixed all three.",
     date: "Mar 2025",
     readTime: "6 min read",
-    tags: ["Next.js", "Microservices", "Architecture"],
+    tags: [".NET", "Microservices", "Architecture"],
     featured: false,
-    slug: "bff-nextjs-microservices",
+    slug: "bff-dotnet-microservices",
   },
   {
     id: "micro-frontend-web-components",
