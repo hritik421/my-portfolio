@@ -80,6 +80,13 @@ export default function Navbar() {
         {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <a
+            href="/HritikGupta_sse.pdf"
+            download
+            className="text-sm font-medium text-gray-700 border border-gray-200 px-4 py-2 rounded-lg hover:border-gray-400 hover:bg-gray-50 active:scale-95 transition-all duration-200"
+          >
+            Resume
+          </a>
+          <a
             href="/#contact"
             onClick={handleHireClick}
             className="text-sm font-medium bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 active:scale-95 transition-all duration-200"
@@ -115,6 +122,13 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
+          <a
+            href="/HritikGupta_sse.pdf"
+            download
+            className="text-sm font-medium text-gray-700 border border-gray-200 px-4 py-2.5 rounded-lg text-center mt-2 hover:border-gray-400 hover:bg-gray-50 transition-colors"
+          >
+            Resume
+          </a>
           <a
             href="/#contact"
             onClick={handleHireClick}
