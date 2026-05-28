@@ -56,17 +56,17 @@ export const projects = [
     featured: true,
     category: ["frontend", "fullstack"],
     shortDesc:
-      "Built a BFF-layer onboarding wizard with Next.js 14, micro-frontend architecture, distributed tracing across 7+ microservices, and Kubernetes deployments.",
+      "Built a BFF-layer onboarding wizard with .NET, micro-frontend architecture, distributed tracing across 7+ microservices, and Kubernetes deployments.",
     problem:
       "Dunnhumby needed a unified onboarding experience for Walmart and other global retail clients, supporting multi-language, multi-tenant configurations, GDPR consent flows, and a complex product hierarchy selection (L1–L5) — all while integrating with 7+ independently deployed microservices.",
     solution:
-      "Designed a Backend-for-Frontend (BFF) proxy layer using Next.js 14 API routes and Istio service mesh, giving the frontend a single clean API surface. Built a multi-step onboarding wizard with React 18 Server/Client Components, Context API, and i18next for multilingual support. Enabled end-to-end distributed tracing with New Relic. Architected a micro-frontend widget for product hierarchy selection using Web Components and an EventBus communication library.",
+      "Designed a Backend-for-Frontend (BFF) proxy layer using .NET and Istio service mesh, giving the frontend a single clean API surface. Built a multi-step onboarding wizard with React 18, Context API, and i18next for multilingual support. Enabled end-to-end distributed tracing with New Relic. Architected a micro-frontend widget for product hierarchy selection using Web Components and an EventBus communication library.",
     outcome: [
       { metric: "7+", label: "Microservices integrated" },
       { metric: "Multi-lang", label: "i18n support" },
       { metric: "GDPR", label: "Compliant flow" },
     ],
-    techStack: ["Next.js 14", "React 18", "TypeScript", "Istio", "New Relic", "Kubernetes", "Helm", "ArgoRollouts", "i18next"],
+    techStack: [".NET", "React 18", "TypeScript", "Istio", "New Relic", "Kubernetes", "Helm", "ArgoRollouts", "i18next"],
     decisions: [
       {
         title: "BFF over direct microservice calls",
