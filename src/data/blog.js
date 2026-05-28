@@ -1,5 +1,16 @@
 export const blogs = [
   {
+    id: "url-shortener-system-design",
+    title: "Designing a URL Shortener: What I Learned Designing on Paper",
+    excerpt:
+      "I've built Redis caching and distributed systems in production. Yet designing a URL Shortener from scratch taught me something I was missing - how to justify every decision with numbers. Here's the full design with the math.",
+    date: "May 2026",
+    readTime: "8 min read",
+    tags: ["System Design", "Redis", "PostgreSQL", "Backend"],
+    featured: true,
+    slug: "url-shortener-system-design",
+  },
+  {
     id: "multi-cloud-storage-strategy-pattern",
     title: "Multi-Cloud Storage with the Strategy Pattern in .NET",
     excerpt:
@@ -7,7 +18,7 @@ export const blogs = [
     date: "May 2025",
     readTime: "7 min read",
     tags: [".NET", "Azure", "GCP", "Design Patterns"],
-    featured: true,
+    featured: false,
     slug: "multi-cloud-storage-strategy-pattern",
   },
   {
