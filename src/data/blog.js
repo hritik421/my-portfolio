@@ -1,5 +1,27 @@
 export const blogs = [
   {
+    id: "whatsapp-system-design",
+    title: "Designing WhatsApp: Real-Time Messaging at Billion-User Scale",
+    excerpt:
+      "A deep dive into the architectural decisions behind a WhatsApp-scale messaging system — WebSocket management, Cassandra fan-out, Presence Service design, and the tradeoffs I'd defend in a real interview.",
+    date: "June 2025",
+    readTime: "10 min read",
+    tags: ["System Design", "Distributed Systems", "Real-Time"],
+    featured: true,
+    slug: "whatsapp-system-design",
+  },
+  {
+    id: "youtube-system-design",
+    title: "Designing YouTube: Video at Global Scale",
+    excerpt:
+      "500 hours of video uploaded per minute, 5 billion views per day. How do you architect upload pipelines, adaptive bitrate streaming, CDN strategy, and eventually consistent view counts at this scale?",
+    date: "June 2025",
+    readTime: "12 min read",
+    tags: ["System Design", "Distributed Systems", "CDN", "Video Streaming"],
+    featured: false,
+    slug: "youtube-system-design",
+  },
+  {
     id: "url-shortener-system-design",
     title: "Designing a URL Shortener: What I Learned Designing on Paper",
     excerpt:
